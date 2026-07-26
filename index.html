@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome P33Ps</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top-left timezone clock -->
+    <div id="timezone-clock" aria-live="polite">
+      <ul>
+        <li><strong>Local</strong>: <span data-tz="local">--:--:--</span></li>
+        <li><strong>UTC</strong>: <span data-tz="UTC">--:--:--</span></li>
+        <li><strong>New York</strong>: <span data-tz="America/New_York">--:--:--</span></li>
+        <li><strong>London</strong>: <span data-tz="Europe/London">--:--:--</span></li>
+        <li><strong>Tokyo</strong>: <span data-tz="Asia/Tokyo">--:--:--</span></li>
+      </ul>
+    </div>
+
+    <nav class="navigationbar">
+        <div class="navigationbar__container">
+            <a href="index.html" id="navigationbar__logo">P33Ps</a>
+            <button class="navigationbar__toggle" id="mobile-menu" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navigationbar__menu" id="primary-navigation">
+                <li class="navigation__item"><a href="index.html" class="navigationbar__links">Home</a></li>
+                <li class="navigation__item"><a href="InfoSec.html" class="navigationbar__links">InfoSec</a></li>
+                <li class="navigation__item"><a href="AboutMe.html" class="navigationbar__links">AboutMe</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style="text-align:center; padding: 1rem;">
+        <h1>Welcome P33Ps</h1>
+        <p>Data is everywhere and needs to be protected.</p>
+        <img src="images/Hooded.png" alt="Cybersecurity" width="600" height="500">
+        <p>This website is brought to you by GitHub where you can track my progress and work on this <a href="https://github.com/Welcome-P33Ps">project</a> by going to the link!</p>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
