@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>InfoSec — P33Ps</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<title>InfoSec | P33Ps</title>
+<meta name="description" content="Home lab, certifications, and study notes in security operations.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h2>InfoSec</h2>
-    <p>Data security and privacy notes. Link: <a rel="me" href="https://infosec.exchange/@P33Ps">Mastodon</a></p>
-  </main>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">P33Ps</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infosec.html" aria-current="page">InfoSec</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <h1>InfoSec</h1>
+    <p class="lead">Where I practice detection, monitoring, and incident response. Everything here is something I've set up or am studying, not a claim of mastery.</p>
+
+    <h2>Home lab</h2>
+    <p>A small security operations center that runs on Hyper-V. Wazuh is the SIEM, and a separate network sensor VM feeds it traffic data. I use it to practice reading alerts and following an event across endpoint and network data.</p>
+
+    <h2>Credentials and study</h2>
+    <section class="file" aria-label="Credentials">
+      <dl class="rows">
+        <dt>Security+</dt>
+        <dd>Certified</dd>
+        <dt>CySA+</dt>
+        <dd>Studying</dd>
+        <dt>SC-200</dt>
+        <dd>Studying</dd>
+        <dt>OSCP</dt>
+        <dd>Long-term goal</dd>
+      </dl>
+    </section>
+    <p class="note">I also hold Cisco networking coursework and use the Cisco CLI.</p>
+
+    <h2>Practice platforms</h2>
+    <ul class="plain">
+      <li><a href="https://tryhackme.com/p/P33Ps" rel="noopener noreferrer">TryHackMe profile</a></li>
+    </ul>
+
+    <h2>Write-ups</h2>
+    <p>No write-ups are published yet. Lab notes will appear here as I finish them. To see what I'm working on now, check <a href="https://github.com/Welcome-P33Ps" rel="noopener noreferrer">GitHub</a>.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>P33Ps. Hosted on GitHub Pages, which keeps its own server logs.</p>
+  </div>
+</footer>
 </body>
 </html>

@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome P33Ps</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<title>P33Ps</title>
+<meta name="description" content="Security operations and detection notes from P33Ps.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Top-left timezone clock -->
-    <div id="timezone-clock" aria-live="polite">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">P33Ps</a>
+    <nav class="site-nav" aria-label="Main">
       <ul>
-        <li><strong>Local</strong>: <span data-tz="local">--:--:--</span></li>
-        <li><strong>UTC</strong>: <span data-tz="UTC">--:--:--</span></li>
-        <li><strong>New York</strong>: <span data-tz="America/New_York">--:--:--</span></li>
-        <li><strong>London</strong>: <span data-tz="Europe/London">--:--:--</span></li>
-        <li><strong>Tokyo</strong>: <span data-tz="Asia/Tokyo">--:--:--</span></li>
+        <li><a href="index.html" aria-current="page">Perimeter</a></li>
+        <li><a href="zero-trust.html">Zero-Trust</a></li>
+        <li><a href="authentication.html">Authentication</a></li>
       </ul>
-    </div>
-
-    <nav class="navigationbar">
-        <div class="navigationbar__container">
-            <a href="index.html" id="navigationbar__logo">P33Ps</a>
-            <button class="navigationbar__toggle" id="mobile-menu" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="navigationbar__menu" id="primary-navigation">
-                <li class="navigation__item"><a href="index.html" class="navigationbar__links">Home</a></li>
-                <li class="navigation__item"><a href="InfoSec.html" class="navigationbar__links">InfoSec</a></li>
-                <li class="navigation__item"><a href="AboutMe.html" class="navigationbar__links">AboutMe</a></li>
-            </ul>
-        </div>
     </nav>
+  </div>
+</header>
 
-    <main style="text-align:center; padding: 1rem;">
-        <h1>Welcome P33Ps</h1>
-        <p>Data is everywhere and needs to be protected.</p>
-        <img src="images/Hooded.png" alt="Cybersecurity" width="600" height="500">
-        <p>This website is brought to you by GitHub where you can track my progress and work on this <a href="https://github.com/Welcome-P33Ps">project</a> by going to the link!</p>
-    </main>
+<main id="main">
+  <div class="wrap">
+    <h1>Data is everywhere and needs to be protected.</h1>
+    <p class="lead">I'm building my security operations skills in the open: a home lab, certifications in progress, and notes on what I learn along the way.</p>
 
-    <script src="app.js"></script>
+    <figure class="photo">
+      <img src="images/cyber-security.jpg" width="867" height="591" alt="A hand pressing a shattering glass screen with the words cyber security across it, a masked figure faintly visible behind.">
+    </figure>
+
+    <section class="file" aria-labelledby="file-title">
+      <h2 class="file-title" id="file-title">File: P33Ps</h2>
+      <dl class="rows">
+        <dt>Handle</dt>
+        <dd>P33Ps</dd>
+        <dt>Focus</dt>
+        <dd>Blue team and security operations</dd>
+        <dt>Certified</dt>
+        <dd>CompTIA Security+</dd>
+        <dt>Studying</dt>
+        <dd>CySA+, Microsoft SC-200, OSCP</dd>
+      </dl>
+    </section>
+
+    <ul class="paths">
+      <li><a href="zero-trust.html"><span class="name">Zero-Trust</span><span class="desc">The home lab, what I'm studying, and lab write-ups.</span></a></li>
+      <li><a href="authentication.html"><span class="name">Authentication</span><span class="desc">Background, how this site treats visitors, and where to reach me.</span></a></li>
+      <li><a href="https://github.com/Welcome-P33Ps" rel="me noopener noreferrer"><span class="name">GitHub</span><span class="desc">Code and progress on this project.</span></a></li>
+    </ul>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>P33Ps. Hosted on GitHub Pages, which keeps its own server logs.</p>
+  </div>
+</footer>
+<aside class="clock" id="clock" aria-label="World clock">
+  <details open>
+    <summary>World clock</summary>
+    <ul>
+      <li><span class="zone">Pacific</span><span class="time" data-tz="America/Los_Angeles">--:--:--</span></li>
+      <li><span class="zone">Eastern</span><span class="time" data-tz="America/New_York">--:--:--</span></li>
+      <li><span class="zone">Europe</span><span class="time" data-tz="Europe/Berlin">--:--:--</span></li>
+      <li><span class="zone">Australia</span><span class="time" data-tz="Australia/Sydney">--:--:--</span></li>
+    </ul>
+  </details>
+</aside>
+<script src="clock.js"></script>
 </body>
 </html>
